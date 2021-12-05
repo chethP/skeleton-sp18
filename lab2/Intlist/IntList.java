@@ -119,7 +119,7 @@ public class IntList {
                     tmp.rest=new IntList(B.first,null);
                     tmp=tmp.rest;
                 }
-                tmp.rest=B;
+                
                 return returnIntList;
             }
             return B;
