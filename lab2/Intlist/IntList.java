@@ -105,18 +105,18 @@ public class IntList {
         //TODO:  fill in method
         if(B!=null){
             if(A!=null){
-                IntList tmp=new IntList(A.first);;
+                IntList tmp=new IntList(A.first,null);
                 IntList returnIntList=tmp;
                 while(A.rest!=null){
                     A=A.rest;
-                    tmp.rest=new IntList(A.first);
+                    tmp.rest=new IntList(A.first,null);
                     tmp=tmp.rest;
                 }
-                tmp.rest=new IntList(B.first);
+                tmp.rest=new IntList(B.first,null);
                 tmp=tmp.rest;
                 while(B.rest!=null){
                     B=B.rest;
-                    tmp.rest=new IntList(B.first);
+                    tmp.rest=new IntList(B.first,null);
                     tmp=tmp.rest;
                 }
                 tmp.rest=B;
