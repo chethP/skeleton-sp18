@@ -1,6 +1,5 @@
 import static org.junit.Assert.*;
 
-import org.graalvm.compiler.core.common.util.IntList;
 import org.junit.Test;
 
 public class IntListTest {

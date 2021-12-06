@@ -134,15 +134,12 @@ public class IntList {
     * as an input, returns null.
     */
     public static IntList reverse(IntList A){
-
-        if(A==null) return null;
-
-        IntList tmp=null;
         IntList L=null;
+        IntList tmp=null;
         while(A!=null){
-            //把A的下指针保存到临时变量
+            //把A的下一指针保存到临时变量
             tmp = A.rest;
-            //把A的下一个指针改变成上一指针
+            //把A的下一指针改变成上一指针
             A.rest=L;
             //L储存当前指针
             L = A;
@@ -151,7 +148,19 @@ public class IntList {
             
         }
         return L;
+// 这个例子生成一个反转数组 但并不会改变原数组 上面的会改变原数组
 
+        /*
+        if(A==null) return null;
+
+         IntList L = new IntList(A.first,null);
+         while(A.rest!=null){
+             A=A.rest;
+             L = new IntList(A.first,L);
+
+         }
+         return L;
+*/
     }
 
 
