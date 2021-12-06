@@ -133,8 +133,8 @@ public class IntList {
     * as an input, returns null.
     */
     public static IntList reverse(IntList A){
-        
-        if(A==null) return null;
+        return null;
+        /*if(A==null) return null;
 
         IntList L = new IntList(A.first,null);
         while(A.rest!=null){
@@ -143,7 +143,7 @@ public class IntList {
 
         }
         return L;
-        
+        */
 
     }
 
