@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/root/RemoteWorking/library-sp18/**/**.jar",
+    ],
+    "java.project.sourcePaths": [
+        "IntList",
+        "Flik",
+        "Arithmetic"
+    ]
+}
