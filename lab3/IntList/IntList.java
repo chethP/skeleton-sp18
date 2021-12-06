@@ -1,6 +1,5 @@
 import java.util.Formatter;
 
-import org.graalvm.compiler.core.common.util.IntList;
 
 /**
  * A naked recursive list of integers, similar to what we saw in lecture 3, but

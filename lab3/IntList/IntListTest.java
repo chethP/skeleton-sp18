@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 
+import org.graalvm.compiler.core.common.util.IntList;
 import org.junit.Test;
 
 public class IntListTest {
@@ -75,5 +76,10 @@ public class IntListTest {
     /** If you're running this from the command line, you'll need
       * to add a main method. See ArithmeticTest.java for an
       * example. */
-
+    
+      /* 
+    public static void main(String... args) {        
+        jh61b.junit.TestRunner.runTests("all", IntListTest.class);
+    }
+    */
 }
