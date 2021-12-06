@@ -1,5 +1,7 @@
 import java.util.Formatter;
 
+import org.graalvm.compiler.core.common.util.IntList;
+
 /**
  * A naked recursive list of integers, similar to what we saw in lecture 3, but
  * with a large number of additional methods.
@@ -133,19 +135,26 @@ public class IntList {
     * as an input, returns null.
     */
     public static IntList reverse(IntList A){
-        return null;
-        /*if(A==null) return null;
 
-        IntList L = new IntList(A.first,null);
-        while(A.rest!=null){
-            A=A.rest;
-            L = new IntList(A.first,L);
+        if(A==null) return null;
 
+        IntList tmp=null;
+        IntList L=null;
+        while(A!=null){
+            //把A的下指针保存到临时变量
+            tmp = A.rest;
+            //把A的下一个指针改变成上一指针
+            A.rest=L;
+            //L储存当前指针
+            L = A;
+            //指针移到下一位
+            A=tmp;
+            
         }
         return L;
-        */
 
     }
+
 
 
 

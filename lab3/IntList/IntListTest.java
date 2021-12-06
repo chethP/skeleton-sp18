@@ -68,8 +68,8 @@ public class IntListTest {
 
     @Test
     public void testReverse() {
-        IntList A = IntList.of(1, 2, 3);
-        IntList B = IntList.of(3, 2, 1);
+        IntList A = IntList.of(1, 2, 3,4);
+        IntList B = IntList.of(4,3, 2, 1);
         assertEquals(A, IntList.reverse(B));
     }
     /** If you're running this from the command line, you'll need
