@@ -1,6 +1,6 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/root/RemoteWorking/library-sp18/javalib/**/**.jar",
+        "/root/RemoteWorking/library-sp18/**/**.jar",
     ]
 }
