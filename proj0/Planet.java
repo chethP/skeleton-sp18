@@ -8,7 +8,7 @@ public class Planet {
     public double yyPos;//y
     public double xxVel;//x方向
     public double yyVel;//y
-    public double mass;//堆？
+    public double mass;//堆？？
     public String imgFileName;//图片名字
     public Planet(double xxPos, double yyPos, double xxVel,double yyVel, double mass, String imgFileName)
     {
